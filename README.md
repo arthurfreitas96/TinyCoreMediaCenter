@@ -1,7 +1,4 @@
 # TinyCoreMediaCenter
-This project implements a Media Center composed by Tiny Core O.S., Transmission's torrent server and Rygel's streaming function.
-
-
 This folder contains all configuration files from my Tiny Core Media Center project. This Media Center has a torrent server that can be accessed localy and remotely and can stream the media downloaded to all the devices connnected to the same local network.
 
 The setup is composed by Tiny Core O.S. version 5.2., Transmission bittorrent client and Rygel, that implements the streaming function. The project also implements static ip to the Media Center. The configuration files that made posible this setup are stored in dedicated folders.
