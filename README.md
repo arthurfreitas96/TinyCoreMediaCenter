@@ -36,7 +36,7 @@ In Transmission's setting.conf, define the download-dir, rpc-username and rpc-pa
 
 In Rygel's rygel.conf, set, in '[MediaExport]', your uris to the same path defined in Transmission's download-dir.
 
-In bashNoIpUpdater's config, set your ddns host name service's username (email), password, host name and path to store the access logs. The logs inform you about noipupdater.sh activity.
+In bashNoIpUpdater's config, set your DDNS host name service's username (email), password, host name and path to store the access logs. The logs inform you about noipupdater.sh activity.
 
 To remotely access the torrent server, remember to create a host name (for example, a free one provided by no-ip) for your server and port foward in your gateway (Transmission's default port is 9091). If your gateway has a DDNS server, you are good to go. You can access the server connecting to hostname:9091 (remember to set the host name in the gateway's DDNS server).
 
