@@ -32,7 +32,7 @@ In OS's bootlocal.sh, set the Transmission's config folder to the path defined b
 
 In staticIP's etho0.sh, set your Media Center and gateway IP's.
 
-In Transmission's setting.conf, define the download-dir, rpc-username and rpc-password to your setup.
+In Transmission's setting.conf, define the download-dir, rpc-username and rpc-password to be used in your setup.
 
 In Rygel's rygel.conf, set, in '[MediaExport]', your uris to the same path defined in Transmission's download-dir.
 
