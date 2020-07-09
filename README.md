@@ -25,6 +25,7 @@ folder: bashNoIpUpdater (provided by https://github.com/LasTechLabs/wake-without
 	config -> both files need to be in a same folder
 
 
+Steps:
 In OS's bootlocal.sh, set the Transmission config folder to the path defined by transmission-daemon on first run. In staticIP's etho0.sh, set your Media Center and gateway IP's.
 
 In Transmission's setting.conf, define the download-dir, rpc-username and rpc-password to your setup.
