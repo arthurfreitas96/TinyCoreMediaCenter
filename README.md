@@ -24,7 +24,7 @@ folder: transmission/
 folder: rygel/
 	rygel.conf -> overwrites original home/tc/.config/regel.conf
 
-folder: bashNoIpUpdater (provided by https://github.com/LasTechLabs/wake-without-WOL/)/
+folder: bashNoIpUpdater (provided by https://github.com/LasTechLabs/wake-without-WOL/ )/
 	noipupdater.sh &
 	config -> both files need to be in a same folder
 
