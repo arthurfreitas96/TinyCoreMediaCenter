@@ -4,7 +4,7 @@ This folder contains all configuration files from my Tiny Core Media Center proj
 The setup is composed by Tiny Core O.S. version 5.2., Transmission bittorrent client and Rygel, that implements the streaming function. The project also implements static ip to the Media Center. The configuration files that made posible this setup are stored in dedicated folders.
 
 Before proceding, be sure to install Transmission and Rygel. Don't forget to first run the transmission-daemon to generate the configuration files for Transmission. If your home gateway has no DDNS server, be sure to install also cron.tcz, bash.tcz and to copy, via usb stick, the bashNoIpUpdater folder to your preferred location.
-
+noip.com
 File Locations:
 
 folder: os/
@@ -38,7 +38,7 @@ In Rygel's rygel.conf, set, in '[MediaExport]', your uris to the same path defin
 
 In bashNoIpUpdater's config, set your DDNS host name service's username (email), password, host name and path to store the access logs. The logs inform you about noipupdater.sh activity.
 
-To remotely access the torrent client, remember to create a host name (for example, a free one provided by no-ip) for your Media Center and port foward in your gateway (Transmission's default port is 9091). If your gateway has a DDNS server, you are good to go. You can access the Media Center connecting to hostname:9091 (remember to set the host name in the gateway's DDNS server).
+To remotely access the torrent client, remember to create a host name (for example, a free one provided by noip.com) for your Media Center and port foward in your gateway (Transmission's default port is 9091). If your gateway has a DDNS server, you are good to go. You can access the Media Center connecting to hostname:9091 (remember to set the host name in the gateway's DDNS server).
 
 However, if your gateway has no DDNS server, you can update your public ip to yout host name using the bash script located in bashNoIpUpdater folder. You can also update your host name with a defined frequency (warning: updating excessively can ban you from the no-ip api). It's possible to define such frequency using cron.
 For instance, you can run 'crontab -e' and set '* */3 * * * bash /home/tc/your-path/noipupdater.sh' to run the updater every 3 hours (read cron documentation or simply visit crontab.guru).
