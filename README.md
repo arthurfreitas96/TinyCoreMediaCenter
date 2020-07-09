@@ -22,7 +22,7 @@ folder: transmission/
 	sysctl.conf -> /etc
 
 folder: rygel/
-	rygel.conf -> home/tc/.config
+	rygel.conf -> overwrites original home/tc/.config/regel.conf
 
 folder: bashNoIpUpdater (provided by https://github.com/LasTechLabs/wake-without-WOL)/
 	noipupdater.sh &
