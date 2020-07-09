@@ -6,6 +6,7 @@ The setup is composed by Tiny Core O.S. version 5.2., Transmission bittorrent cl
 Before proceding, be sure to install Transmission and Rygel. Don't forget to first run the transmission-daemon to generate the configuration files for Transmission. If your home gateway has no DDNS server, be sure to install also cron.tcz, bash.tcz and to copy, via usb stick, the bashNoIpUpdater folder to your preferred location.
 
 File Locations:
+
 folder: os/
 	bootlocal.sh -> /opt &
 	.filetool.lst -> /opt
@@ -26,12 +27,14 @@ folder: bashNoIpUpdater (provided by https://github.com/LasTechLabs/wake-without
 
 
 Steps:
-In OS's bootlocal.sh, set the Transmission's config folder to the path defined by transmission-daemon on first run. In staticIP's etho0.sh, set your Media Center and gateway IP's.
+
+In OS's bootlocal.sh, set the Transmission's config folder to the path defined by transmission-daemon on first run.
+
+In staticIP's etho0.sh, set your Media Center and gateway IP's.
 
 In Transmission's setting.conf, define the download-dir, rpc-username and rpc-password to your setup.
 
-In Rygel's rygel.conf, set, in '[MediaExport]', your uris to the same path defined in
-Transmission's download-dir.
+In Rygel's rygel.conf, set, in '[MediaExport]', your uris to the same path defined in Transmission's download-dir.
 
 In bashNoIpUpdater's config, set your ddns host name service's username (email), password, host name and path to store the access logs. The logs inform you about noipupdater.sh activity.
 
