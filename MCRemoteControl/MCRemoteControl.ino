@@ -1,5 +1,5 @@
 /*
-  This sketch allows you to turn the Media Center on and off remotely (access with credentials). In my project, i used a NodeMCU controlling a relay module and a MB102 as power supply. NodeMCU was supplied with 3.3.v and the relay module with 5v. The relay module logic is documented as being 5v, but it worked just fine with NodeMCU's 3.3v logic. See the sketch's sources below:
+  This sketch allows you to turn the Media Center on and off remotely (access with credentials). In this project, i used a NodeMCU board controlling a relay module and a MB102 as power supply. NodeMCU was supplied with 3.3.v and the relay module with 5v. The relay module logic is documented as being 5v, but it worked just fine with NodeMCU's 3.3v logic. See the sketch's sources below:
 */
 
 /*
