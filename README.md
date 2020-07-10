@@ -27,6 +27,9 @@ folder: rygel/
 folder: bashNoIpUpdater (provided by https://github.com/LasTechLabs/wake-without-WOL/ )/
 	noipupdater.sh &
 	config -> both files need to be in a same folder
+	
+(folder: MCRemoteControl/
+	MCRemoteControl.ino -> this sketch allows to turn on and off the Media Center remotely, and is not used in the Media Center setup, but in the optional configuration including a NodeMCU board. Read more below.)
 
 
 ## Steps
@@ -48,4 +51,4 @@ To remotely access the torrent client, remember to create a host name (for examp
 However, if your gateway has no DDNS server, you can update your public ip to yout host name using the bash script located in bashNoIpUpdater folder. You can also update your host name with a defined frequency (warning: updating excessively can ban you from the no-ip api). It's possible to define such frequency using cron.
 For instance, you can run 'crontab -e' and set '* */3 * * * bash /home/tc/your-path/noipupdater.sh' to run the updater every 3 hours (read cron documentation or simply visit crontab.guru).
 
-With you have interest in turning on and off your Media Center remotely, search for Wake-on-Lan (if your pc supports it). Alternatively, https://github.com/LasTechLabs/wake-without-WOL/, if your pc supports wake up by timer (RTC). You can also turn your pc on and off remotely using a nodeMCU and a relay module and setting your pc, if it supports, to auto start up when connected to the electrical grid (be aware that most relay modules operate with 5v logic and nodeMCU operates at 3.3v logic, so a logical converter circuit may be necessary).
+With you have interest in turning on and off your Media Center remotely, search for Wake-on-Lan (if your pc supports it). Alternatively, https://github.com/LasTechLabs/wake-without-WOL/, if your pc supports wake up by timer (RTC). You can also turn your pc on and off remotely using a NodeMCU board and a relay module and setting your pc, if it supports, to auto start up when connected to the electrical grid. In this project, the last solution was adopted and the sketch to the NodeMCU board is included inside the MCRemoteControl folder.
