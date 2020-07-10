@@ -6,7 +6,7 @@ This folder contains all configuration files from my Tiny Core Media Center proj
 
 The setup is composed by Tiny Core O.S. version 5.2., Transmission bittorrent client and Rygel, that implements the streaming function. The project also implements static ip to the Media Center. The configuration files that made posible this setup are stored in dedicated folders.
 
-Before proceding, be sure to install Transmission and Rygel. Don't forget to first run the transmission-daemon to generate the configuration files for Transmission. If your home gateway has no DDNS server, be sure to install also cron.tcz, bash.tcz and to copy, via usb stick, the bashNoIpUpdater folder to your preferred location.
+Before proceding, be sure to have your pc running on Tiny Core 5.2. and to install Transmission and Rygel to it. Don't forget to first run the transmission-daemon to generate the configuration files for Transmission. If your home gateway has no DDNS server, be sure to install also cron.tcz, bash.tcz and to copy, via usb stick, the bashNoIpUpdater folder to your preferred location.
 
 ## File Locations
 
