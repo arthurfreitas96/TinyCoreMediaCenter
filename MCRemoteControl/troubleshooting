@@ -1,0 +1,10 @@
+My NodeMCU board presented some issues through the implementation of the Media Center remote control.
+
+First, all the board logic was inverted. All the digital pins gave output HIGH when ordered LOW and vice versa. To solve this
+problem, it was necessary to invert all boolean variable logic in the sketch. That's what the InvMCRemoteControl sketch does.
+
+Second, the board wont run the program after a shut down in the power supply. It was necessary to press the reset button in the
+board to run the program again. I don't know if this problem was due to my power supply circuit. I used a MB102 board connected
+to the grid by a 12v/500mA power supply. Regardless, this issue was solved connecting the RST pin to the 3V3 pin in the NodeMCU
+board (source: https://www.esp8266.com/viewtopic.php?f=6&t=16516/). That way, the board resets every time that power is supplied
+again.
