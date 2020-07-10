@@ -80,7 +80,7 @@ function logoutButton() {
   setTimeout(function(){ window.open("/logged-out","_self"); }, 1000);
 }
 </script>
-<p><strong>Note:</strong> Remember to wait around 20 seconds for the server to wake up or sleep.</p>
+<p><strong>Note:</strong> Remember to wait around 35 seconds for the server to wake up and 10 seconds for it to sleep.</p>
 </body>
 </html>
 )rawliteral";
