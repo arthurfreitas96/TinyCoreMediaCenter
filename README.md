@@ -4,7 +4,7 @@
 
 This folder contains all configuration files from my Tiny Core Media Center project. This Media Center has a torrent client that can be accessed locally and remotely and can stream the media downloaded to all the devices connnected to the same local network.
 
-The setup is composed by Tiny Core O.S. version 5.2., Transmission bittorrent client and Rygel, that implements the streaming function. The project also implements static ip to the Media Center. The configuration files that made posible this setup are stored in dedicated folders.
+The setup is composed by Tiny Core O.S. version 5.2., Transmission bittorrent client and Rygel, that implements the UPnP streaming function (you can access the media via VLC, in View/Playlist/Local Network/Universal Plug n' Play). The project also implements static ip to the Media Center. The configuration files that made posible this setup are stored in dedicated folders.
 
 Before proceding, be sure to have your pc running on Tiny Core 5.2. and to install Transmission and Rygel to it. Don't forget to first run the transmission-daemon to generate the configuration files for Transmission. If your home gateway doesn't support DDNS, be sure to install also cron.tcz, bash.tcz and to copy, via usb stick, the bashNoIpUpdater folder to your preferred location.
 
