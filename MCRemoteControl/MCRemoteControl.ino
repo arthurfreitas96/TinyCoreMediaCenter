@@ -95,7 +95,6 @@ const char logout_html[] PROGMEM = R"rawliteral(
 
 // Replaces placeholder with button section in your web page
 String processor(const String& var){
-  //Serial.println(var);
   if(var == "BUTTONPLACEHOLDER"){
     String buttons ="";
     String outputStateValue = outputState();
@@ -116,8 +115,6 @@ String outputState(){
 }
 
 void setup(){
-  // Serial port for debugging purposes
-  Serial.begin(115200);
 
   pinMode(output, OUTPUT);
   digitalWrite(output, LOW);
@@ -127,11 +124,7 @@ void setup(){
   WiFi.config(ip, gateway, subnet);
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
-    Serial.println("Connecting to WiFi..");
   }
-
-  // Print ESP Local IP Address
-  Serial.println(WiFi.localIP());
 
   // Route for root / web page
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
@@ -164,7 +157,6 @@ void setup(){
       inputMessage = "No message sent";
       inputParam = "none";
     }
-    Serial.println(inputMessage);
     request->send(200, "text/plain", "OK");
   });
   
