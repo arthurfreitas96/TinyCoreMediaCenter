@@ -28,7 +28,7 @@ folder: rygel/
 	noipupdater.sh &
 	config -> both files need to be in a same folder
 	
-(If your pc doesn,t support Wake-on-Lan: folder: MCRemoteControl/
+(If your pc doesn't support Wake-on-Lan: folder: MCRemoteControl/
 	MCRemoteControl.ino -> this sketch allows to turn on and off the Media Center remotely, and is not used in the Media Center setup, but in the optional configuration including a NodeMCU board. Read more below.)
 
 
