@@ -2,5 +2,5 @@ opt
 home
 #for static ip settings:
 /opt/eth0.sh
-#for cron command repeater
-/var/spool/cron
+#for cron command repeater, uncomment if you need it
+#/var/spool/cron
