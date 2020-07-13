@@ -47,7 +47,9 @@ In Rygel's rygel.conf, set, in '[MediaExport]', your uris to the same path defin
 
 To remotely access the torrent client, remember to create a host name (for example, a free one provided by https://www.noip.com/) for your Media Center and port foward in your gateway (Transmission's default port is 9091). If your gateway supports DDNS, you are good to go. You can access the Media Center connecting to hostname:9091 (remember to set the host name in the gateway's DDNS settings).
 
-However, if your gateway doesn't support DDNS, you can update your public ip to yout host name using the bash script located in bashNoIpUpdater folder. You can also update your host name with a defined frequency (warning: updating excessively can ban you from the no-ip api). It's possible to define such frequency using cron.
+However, if your gateway doesn't support DDNS, you can update your public ip to your host name using the bash script located in bashNoIpUpdater folder. You can also update your host name with a defined frequency (warning: updating excessively can ban you from the no-ip api). It's possible to define such frequency using cron.
 For instance, you can run 'crontab -e' and set '* */3 * * * bash /home/tc/your-path/noipupdater.sh' to run the updater once in every 3 hours (read cron documentation or simply visit https://crontab.guru/).
 
 If you have interest in turning on and off your Media Center remotely, search for Wake-on-Lan (if your pc supports it). Alternatively, https://github.com/LasTechLabs/wake-without-WOL/, if your pc supports wake up by timer (RTC). You can also turn your pc on and off remotely using a NodeMCU board and a relay module and setting your pc, if it supports, to automatically start when connected to the electrical grid. In this project, the last solution was adopted and the sketch to the NodeMCU board is included inside the MCRemoteControl folder.
+
+In this project, the Media Center was implemented headlessly, but it's system was set to be controllled remotely via SSH.
