@@ -18,10 +18,10 @@ folder: staticIP/
 	eth0.sh -> /opt
 
 folder: transmission/
-	settings.json -> use it as settings file for Transmission. Remember to make it persistent.
+	settings.json -> use it as settings file for Transmission. Remember to make the Transmission's configuration folder to be persistent, so it can safely store your torrent files.
 
 folder: rygel/
-	rygel.conf -> use it as settings file for Rygel. Remember to make it persistent.
+	rygel.conf -> use it as settings file for Rygel.
 
 (If your gateway doesn't support DDNS: folder: bashNoIpUpdater (provided by https://github.com/LasTechLabs/wake-without-WOL/ )/
 	noipupdater.sh &
