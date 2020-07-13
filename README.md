@@ -45,7 +45,7 @@ In Rygel's rygel.conf, set, in '[MediaExport]', your uris to the same path defin
 
 ## Observations
 
-To remotely access the torrent client, remember to create a host name (for example, a free one provided by https://www.noip.com/) for your Media Center and port foward in your gateway (Transmission's default port is 9091). If your gateway supports DDNS, you are good to go. You can access the Media Center connecting to hostname:9091 (remember to set the host name in the gateway's DDNS settings).
+To remotely access the torrent client, remember to create a host name (for example, a free one provided by https://www.noip.com/) for your Media Center and to port foward in your gateway (Transmission's default port is 9091). If your gateway supports DDNS, you are good to go. You can access the Media Center connecting to hostname:9091 (remember to set the host name in the gateway's DDNS settings).
 
 However, if your gateway doesn't support DDNS, you can update your public ip to your host name using the bash script located in bashNoIpUpdater folder. You can also update your host name with a defined frequency (warning: updating excessively can ban you from the no-ip api). It's possible to define such frequency using cron.
 For instance, you can run 'crontab -e' and set '* */3 * * * bash /home/tc/your-path/noipupdater.sh' to run the updater once in every 3 hours (read cron documentation or simply visit https://crontab.guru/).
