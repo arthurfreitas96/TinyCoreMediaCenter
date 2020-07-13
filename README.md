@@ -35,7 +35,7 @@ folder: rygel/
 
 In OS's bootlocal.sh, set the Transmission's config folder to the path defined by transmission-daemon on first run.
 
-In staticIP's etho0.sh, set your Media Center and gateway IP's.
+In staticIP's eth0.sh, set your Media Center and gateway IP's.
 
 In Transmission's setting.conf, define the download-dir, rpc-username and rpc-password to be used in your setup.
 
