@@ -8,9 +8,9 @@ sysctl -p /etc/sysctl.conf
 opt/eth0.sh
 #start dbus to use rygel
 sudo /usr/local/etc/init.d/dbus start
-#to use cron
-crond -L /dev/null 2>&1
+#to use cron, uncomment if you need it
+#crond -L /dev/null 2>&1
 #set your path to transmission-daemon configuration
 #mine is /home/tc/apps/trans/config
-transmission-daemon -g /home/tc/apps/trans/config &
+transmission-daemon -g /mnt/sda1/transmission &
 rygel --config=home/tc/.config/rygel.conf &
