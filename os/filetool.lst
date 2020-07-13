@@ -1,7 +1,5 @@
 opt
 home
-#for transmission baud rate settings:
-/etc/sysctl.conf
 #for static ip settings:
 /opt/eth0.sh
 #for cron command repeater
