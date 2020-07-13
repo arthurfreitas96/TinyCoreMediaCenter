@@ -52,4 +52,4 @@ For instance, you can run 'crontab -e' and set '* */3 * * * bash /home/tc/your-p
 
 If you have interest in turning on and off your Media Center remotely, search for Wake-on-Lan (if your pc supports it). Alternatively, https://github.com/LasTechLabs/wake-without-WOL/, if your pc supports wake up by timer (RTC). You can also turn your pc on and off remotely using a NodeMCU board and a relay module and setting your pc, if it supports, to automatically start when connected to the electrical grid. In this project, the last solution was adopted and the sketch to the NodeMCU board is included inside the MCRemoteControl folder.
 
-In this project, the Media Center was implemented headlessly, but it's system was set to be controllled remotely via SSH, according https://iotbytes.wordpress.com/configure-ssh-server-on-microcore-tiny-linux/.
+In this project, the Media Center was implemented headlessly, but it's system was set to be controllled remotely via SSH, according to https://iotbytes.wordpress.com/configure-ssh-server-on-microcore-tiny-linux/.
