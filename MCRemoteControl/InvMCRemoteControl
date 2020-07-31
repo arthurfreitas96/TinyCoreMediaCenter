@@ -27,8 +27,8 @@ and most of the code by:
 #include <ESPAsyncWebServer.h>
 
 // Replace with your network credentials
-const char* ssid = "wifi";
-const char* password = "0016700163";
+const char* ssid = "YOURSSIDHERE";
+const char* password = "YOURWIFIPASSWDHERE";
 
 // Defining static ip for nodemcu. Set your ip, port and gateway here
 IPAddress ip(192,168,25,14);
@@ -37,8 +37,8 @@ IPAddress subnet(255,255,255,0);
 AsyncWebServer server(1010);
 
 // Set the server credencials here
-const char* http_username = "biririman";
-const char* http_password = "0016700163";
+const char* http_username = "YOURUSERHERE";
+const char* http_password = "YOURPASSWDHERE";
 
 const char* PARAM_INPUT_1 = "state";
 
