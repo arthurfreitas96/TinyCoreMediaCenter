@@ -39,7 +39,7 @@ const char* http_password = "admin";
 
 const char* PARAM_INPUT_1 = "state";
 
-const int output = D1;
+const int output = D2;
 
 const char index_html[] PROGMEM = R"rawliteral(
 <!DOCTYPE HTML><html>
